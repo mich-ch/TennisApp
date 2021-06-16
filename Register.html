@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./css/registerstyle.css">
+    <link rel="manifest" href="/manifest.json">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+</head>
+
+
+<body>
+
+    <h3>Register</h3>
+
+    <div>
+        <form action="action_page.php" method="POST">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="australia">Serbia</option>
+                <option value="canada">Greece</option>
+                <option value="usa">France</option>
+                <option value="australia">UK</option>
+                <option value="canada">Spain</option>
+                <option value="usa">Russia</option>
+                <option value="australia">Germany</option>
+                <option value="canada">Sweden</option>
+                <option value="usa">Portugal</option>
+                <option value="australia">Brazil</option>
+                <option value="canada">Argentina</option>
+                <option value="usa">Peru</option>
+                <option value="australia">China</option>
+                <option value="canada">Italy</option>
+                <option value="usa">Poland</option>
+                <option value="usa">Other</option>
+
+            </select>
+
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" placeholder="Your age..">
+
+            <label for="ranking">Ranking</label>
+            <input type="text" id="ranking" name="ranking" placeholder="Your ranking..">
+
+            <label for="backhand">Backhand</label>
+            <input type="text" id="backhand" name="backhand" placeholder="Your ranking..">
+
+            <label for="forehand">Forehand</label>
+            <input type="text" id="forehand" name="forehand" placeholder="Your ranking..">
+
+            <label for="service">Service</label>
+            <input type="text" id="service" name="service" placeholder="Your ranking..">
+
+            <label for="volley">Volley</label>
+            <input type="text" id="volley" name="volley" placeholder="Your ranking..">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

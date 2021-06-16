@@ -1,0 +1,416 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    float: right;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+@media screen and (max-width: 350px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+    .titlegr .grid-container {
+        display: block;
+        grid-template-columns: 100% 100%;
+    }
+    .skillsgr .grid-container {
+        display: block;
+        grid-template-columns: 100% 100%;
+    }
+    .tablegr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar a {
+        display: inline-block;
+    }
+    .titlegr .grid-container {
+        display: block;
+        grid-template-columns: 80% 80%;
+    }
+    .skillsgr .grid-container {
+        display: block;
+        grid-template-columns: 80% 80%;
+    }
+    .tablegr {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar a {
+        display: inline-block;
+    }
+    .titlegr .grid-container {
+        display: block;
+        grid-template-columns: 80% 80%;
+    }
+    .skillsgr .grid-container {
+        display: block;
+        grid-template-columns: 80% 80%;
+    }
+    .tablegr {
+        display: inline;
+    }
+}
+
+
+/*Modal*/
+
+h4 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.close {
+    color: #fff;
+    transform: scale(1.2)
+}
+
+.modal-content {
+    font-weight: bold;
+    background: linear-gradient(to bottom right, #F87E7B, #B05574);
+}
+
+.form-control {
+    margin: 1em 0;
+}
+
+.form-control:hover,
+.form-control:focus {
+    box-shadow: none;
+    border-color: #fff;
+}
+
+.username,
+.password {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #eee;
+    padding-left: 0;
+    font-weight: normal;
+    background: transparent;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #eee;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+    font-weight: bold;
+    color: #fff;
+}
+
+.login {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid #FAB87F;
+    color: #FAB87F;
+    font-weight: bold;
+    transition: all .5s;
+    margin-top: 1em;
+}
+
+.login:hover {
+    background: #FAB87F;
+    color: #fff;
+}
+
+
+/* background image */
+
+.hero-image {
+    background-image: url("../images/tennis.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+/* Grid */
+
+.titlegr>h1 {
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-right: auto;
+    /*centres in compliant browsers*/
+    margin-left: auto;
+}
+
+.grid-item {
+    font-size: 30px;
+}
+
+
+/* Card */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+
+/* table 1 */
+
+table {
+    width: 70%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#t01 th {
+    background-color: black;
+    color: white;
+}
+
+
+/* Hide Columns Style */
+
+#checkbox_div {
+    margin: auto;
+    text-align: left;
+}
+
+#checkbox_div li {
+    list-style: none;
+    background-image: none;
+    background-repeat: none;
+    background-position: 0;
+}
+
+#checkbox_div {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+
+/* Skills */
+
+.skillsgr .grid-container {
+    background-color: aliceblue;
+}
+
+.skillsgr>h1 {
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+.imgskill img {
+    width: 40%;
+    border-radius: 22%;
+}
+
+.containerSkill {
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+}
+
+.forehand,
+.backhand,
+.volley,
+.service {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    border-radius: 20px;
+}
+
+.forehand {
+    width: 90%;
+    background-color: #4caf50;
+}
+
+.backhand {
+    width: 80%;
+    background-color: #2196f3;
+}
+
+.volley {
+    width: 65%;
+    background-color: #f44336;
+}
+
+.service {
+    width: 60%;
+    background-color: #808080;
+}
+
+
+/* Stats */
+
+.tablegr>h1 {
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+.tablegr .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.tablegr table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    justify-content: center;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-remove {
+    color: red;
+}
+
+.imgstat img {
+    width: 30%;
+    border-radius: 22%;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: grey;
+    color: white;
+}
+
+footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}

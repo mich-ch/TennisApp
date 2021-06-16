@@ -1,0 +1,25 @@
+{
+    "name": "Tennis App",
+    "short_name": "TennisApp",
+    "start_url": "/home.html",
+    "display": "standalone",
+    "background_color": "#FFE9D2",
+    "theme_color": "#FFE1C4",
+    "orientation": "portrait-primary",
+    "icons": [{
+            "src": "/images/profile2.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/images/skills.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/images/tennis.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        }
+    ]
+}
